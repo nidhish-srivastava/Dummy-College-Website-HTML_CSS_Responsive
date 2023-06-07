@@ -64,10 +64,17 @@ h1,h2,h3,h4 {
   text-align: center;
 }
 
+.course-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .course-card {
   margin-top: 2rem;
   background-color: lightgreen;
   border-radius: 1rem;
+  flex: 1;
 }
 
 /* CAMPUS */
@@ -78,6 +85,11 @@ h1,h2,h3,h4 {
 .campus-card{
     margin-top: 2rem;
     font-size: clamp(1rem,1.2rem,2rem);
+}
+.campus-container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .campus-card > img{
     display: block;
@@ -126,8 +138,11 @@ h1,h2,h3,h4 {
         max-width: 80%;
         margin: 0  auto;
      }
+     .course-container{
+      flex-direction: row;
+     }
      .course-card{
-        padding: 2rem;
+        padding: 0 1rem;
      }
 
      h1{
@@ -150,16 +165,24 @@ h1,h2,h3,h4 {
     padding: 4rem;
   }
     .campus-card{
+      margin-top: 1rem;
         max-width: 80%;
         margin: 0 auto;
     }
+    .campus-container{
+      flex-direction: row;
+    }
     .campus-card > img{
-        aspect-ratio: 2/1;
+        aspect-ratio: 1/1;
     }
 
     .footer{
         padding: 2rem;
     }
+
+    .course-container{
+      flex-direction: row;
+     }
 
     h1{
       font-size: 2.54rem;
