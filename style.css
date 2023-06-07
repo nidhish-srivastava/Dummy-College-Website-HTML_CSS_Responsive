@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto:ital@1&display=swap');
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(banner.png);
+  background-position: center;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.navbar {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: clamp(1rem, 1.2rem, 2rem);
+}
+
+h1,h2,h3,h4 {
+    text-align: center;
+  font-weight: 700;
+}
+
+.text-box {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  font-size: clamp(1rem, 1.2rem, 2rem);
+}
+
+.text-box p {
+  max-width: 80%;
+  text-align: center;
+}
+
+.hero-btn {
+  background-color: red;
+  padding: 0.8rem;
+}
+
+
+
+/* COURSES CSS */
+.courses {
+  padding: 2rem;
+  text-align: center;
+}
+
+.course-card {
+  margin-top: 2rem;
+  background-color: lightgreen;
+  border-radius: 1rem;
+}
+
+/* CAMPUS */
+.campus{
+    text-align: center;
+    padding: 2rem;
+}
+.campus-card{
+    margin-top: 2rem;
+    font-size: clamp(1rem,1.2rem,2rem);
+}
+.campus-card > img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* FOOTER */
+.footer{
+    background-color: lightsalmon;
+  font-size: clamp(1rem, 1rem, 2rem);
+ text-align: center;  
+}
+
+.footer p{
+    padding: 1rem;
+}
+.footer i{
+    margin-left: 1rem;
+    font-size: clamp(1rem,1.4rem,3rem);
+}
+
+
+@media (min-width: 1024px) {
+
+ 
+     .navbar{
+        justify-content: end;
+        padding: 4rem;
+        font-size: 1.6rem;
+        gap: 2rem;
+     }
+
+     .campus-card{
+      width: 80%;
+      margin: 0 auto;
+     }
+
+     .campus-card > img{
+      aspect-ratio: 2/1;
+  }
+
+     .courses{
+        max-width: 80%;
+        margin: 0  auto;
+     }
+     .course-card{
+        padding: 2rem;
+     }
+
+     h1{
+        font-size: 2rem;
+     }
+     h3{
+        font-size: 1.5rem;
+     }
+      p{
+        font-size: 1.2rem;
+     }
+}
+
+@media (min-width : 1280px) {
+  .header{
+    min-height: 90vh;
+  }
+  .navbar{
+    font-size: 1.5rem;
+    padding: 4rem;
+  }
+    .campus-card{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .campus-card > img{
+        aspect-ratio: 2/1;
+    }
+
+    .footer{
+        padding: 2rem;
+    }
+
+    h1{
+      font-size: 2.54rem;
+    }
+
+    a{
+      font-size: 1.5rem;
+    }
+
+    h2{
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1.6rem;
+    }
+}
